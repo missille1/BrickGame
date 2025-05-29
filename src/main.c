@@ -17,7 +17,7 @@ int main() {
       }
       userinput(action, 0);
       GameInfo_t game_info = updatecurrentstate();
-      if (Brickg->state == GAMEOVER) {
+      if (Brickg->state == GAMEOVER) {;
         game_info.pause = -1;
         print_info(game_info);  ///< Выводим информацию о завершении игры
         refresh();    ///< Обновляем экран
